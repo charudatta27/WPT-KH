@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <script>
+
+// setTimeout(()=>{
+//     var a = 3;
+//     var b = 2;
+//     var c = a+b;
+//     console.log("sum is", c);
+    
+//     },1500);
+
+//     setTimeout(()=>{
+//         var num = 5;
+
+//     },3000);
+
+//     setTimeout(()=>{
+
+//         var num = 8;
+//         var sq = num * num;
+//         console.log("after sum");
+
+//     },1000)
+
+//     console.log(" before sum");
+
+
+    // storeDataFromDb() -> async
+    // readDataFromFile()-> async
+    // sendResponse()-> async
+
+
+    // read file -> store file data in db -> send response
+    
+    // readDataFromFile(()=>{
+
+    //     storeDataToDb(()=>{
+
+    //         sendResponse(()=>{
+
+    //         })
+            
+    //     })
+    // })
+
+    // callback hell: nesting of callback  hell:
+
+    // try to avoid the callback hell:
+
+    // 1. code isnt scalable
+    // 2. code isnt readable
+    // 3. code isnt easy to maintain
+
+
+
+    // promise: to avoid callback hell : resolve callback
+
+    // steps:
+    //  1.promise creation: we have to create a promise for the operations 
+    //    till the promise has not been executed it will remain into the pending state
+     
+    //  2. promise execution : execute the promise operation  
+
+    //  3. promise handling 
+    // |
+    // |
+    // // |
+
+    // step: 
+
+    // 1.//const myPromise =  new Promise(callback/promise executor)
+    // . const myPromise =  new Promise((resolve, reject)=>{
+                //    resolve(); _> logic succeeded
+                //    reject(); -> if logic got failed
+
+    // });
+
+    //while creating the promise , its the responsibilty of a developer to either fullfill/resolve its or reject it
+ 
+
+//  function checkEven(){
+
+//  }
+
+// const evenPromise = new Promise((resolve, reject) => {
+//     const num = 4;
+
+//     if (num % 2 === 0) {
+//         resolve("Number is Even");
+//     } else {
+//         reject("Number is Odd");
+//     }
+// });
+
+// then() :=> will be called in case of resolution
+// catch() :=> will be called in case of rejection
+   
+//evenPromise.then(()=>{}).catch(()=>{})
+            
+
+// evenPromise
+//     .then((msg) => {
+//         console.log(msg);
+//     })
+//     .catch((err) => {
+//         console.log(err);
+//     });
+
+         
+
+    // ==================================================================
+
+//async function : 
+
+
+
+
+
+
+
+
+
+// =========================================
+ 
+//   async function sum(a, b){
+
+//     console.log("started calculating sum...");
+    
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             var c = a + b;
+//             resolve(c)
+//         }, 1500)
+//     });
+
+//   }
+
+//   sum(2,3).then((sumResult)=>{
+//     console.log("sum is",sumResult);
+    
+
+//   })
+//   .catch((error)=>{
+//     console.log(error);
+    
+
+//   });
+
+
+//   ==========================
+
+// it means if we are using await then it will return value 
+// and if not using it will return promise
+
+//handles the promises two ways
+
+// 1. then & catch fn 
+// 2. async and await keywords
+
+//await : it will make sure the rest of the statements are going to wait until the current promise has not been resolved and it will return the resolved value is any
+// await sum(2, 3);
+//  await factorial()
+
+//  ------
+// ------
+
+
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
