@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    //AJAX :
+    // Asynchronus javascript and XML
+    //without reloading  browser in website you can  Asynchronusly use and get tha data
+    //AJAX (Asynchronous JavaScript and XML) allows web pages to update content instantly without reloading the entire page, creating smoother user experiences similar to desktop applications. Common real-life examples include Google search auto-complete, interactive maps, live news feeds, social media "likes," and form submissions
+    //with the help of ajax we can fetch the data from a server without blocking the other running process ans without reloading the browser
+
+    // fetch data or send req on server this is work of AJAX
+    // AJAX stands for Asynchronous JavaScript and XML. Ajax is not a programming language or a tool, but a concept. Ajax is a client-side script that communicates to and from a server/database without the need for a postback (process of submitting web page to the server for processing) or a complete page refresh. Ajax is “the method of exchanging data with a server, and updating parts of a web page – without reloading the entire page.”
+    
+  
+  //eg: send reel without reload , also youtube video
+
+  step 1: create an object of XMLHttpRequest
+	
+	const xhr = new XMLHttpRequest();
+
+step 2: mention the url and request method
+	open the request/initialize the request
+
+	xhr.open(method, url);
+
+	xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
+
+step 3: send the request
+
+	xhr.send();	
+
+step 4: read the response 
+
+
+// browser will always maintain a state of the xhr object which will inform us about the current state of request
+
+<!-- readyState is state which represents the current state of the request
+readyState will hold a numeric value -->
+
+<!-- 0 : when xhr obj is just created
+1 : open() has been called/req has been initialized 
+2 : req has been sent/ send() has been called
+3 : server has accepted the request
+4 : req is completed/ arrived on the browser -->
+
+
+<!-- onreadystatechange event will be fired by browser whenever readyState value will be updated  -->
+
+xhr.onreadystatechange = ()=> {
+
+}
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
