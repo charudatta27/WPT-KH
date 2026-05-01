@@ -1,0 +1,16 @@
+{
+  "name": "backend-dev",
+  "version": "1.0.0",
+  "description": "this is my backend",
+  "license": "ISC",
+  "author": "Charudatta",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
